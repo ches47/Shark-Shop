@@ -63,8 +63,6 @@ function App() {
     setCartItems(prev => [...prev, obj]);
   }
 
-  console.log(cartItems)
-
   return (
     <div className="wrapper clear"> 
       {cartOpened ? <Drawer items={cartItems} onClose={() => setCartOpened(false)} /> : null}
@@ -80,8 +78,9 @@ function App() {
         </div>
 
        <div className="sneakers-blocks d-flex flex-wrap"> 
-          {items.map((item) => (
+          {items.map((item, index) => (
             <Card 
+                key={index}
                 title={item.title}
                 price={item.price}
                 imageURl={item.imageURl}
