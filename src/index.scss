@@ -18,7 +18,6 @@ body {
   border-radius: 20px;
   max-width: 1080px;
   margin: 0px auto;
-
 }
 
 .overlay {
@@ -70,7 +69,7 @@ header {
 }
 
 
-.card-button  {
+.card-button {
   // background: rgb(141, 132, 132);
   border: 1px solid #bcb6b6;
   box-sizing: border-box;
@@ -79,11 +78,63 @@ header {
   width: 33px;
   cursor: pointer;
 }
+
+.cartEmpty {
+  text-align: center;
+  p {
+    width: 280px;
+    line-height: 24px;
+  }
+  .greenButton {
+    width: 245px;
+    margin-top: 20px;
+    &:hover {
+      img {
+        // transform: rotate(180deg) translateX(3px);
+      }
+    }
+    
+    img {
+      position: relative;
+      top: 1px;
+      margin-right: 15px;
+      // transition: transform 0.15s ease-in-out;
+    }
+  }
+}
+
+.greenButton {
+  width: 100%;
+  height: 55px;
+  background: #9dd558;
+  border-radius: 18px;
+  border: 0;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+
+  &:hover {
+    background: lighten(#9dd558, 5%);
+  }
+  &:active {
+    background: darken(#9dd558, 5%);
+  }
+} 
  
 .search-block {
   border: 1px solid #f3f3f3;
   border-radius: 10px;
   padding: 0 15px;
+  position: relative;
+
+  .clear {
+    position: absolute;
+    right: 0;
+    top: 0px;
+  }
+
   
   input {
       border: 0;
