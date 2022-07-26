@@ -7,7 +7,6 @@ import AppContext from '../context';
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 function Drawer({onClose, onRemove, items = [] }) {
-    const { cartItems, setCartItems } = React.useContext(AppContext);
     const [orderId, setOrderId] = React.useState(null);
     const [isOrderComplete, setIsOrderComplete] = React.useState(false);
     const [isLoading, setIsLoading] = React.useState(false);
@@ -63,12 +62,12 @@ function Drawer({onClose, onRemove, items = [] }) {
                <li>
                  <span>Summative: </span>
                  <div></div>
-                 <b>240 $ </b>
+                 <b>{totalPrice} $ </b>
                </li>
                <li className="d-flex">
                  <span>Tax 5%: </span>
                  <div>  </div>
-                 <b>6 $</b>
+                 <b>{(totalPrice / 100) * 5} $</b>
                </li>
              </ul>
              <button disabled={isLoading} onClick={onClickOrder} className="violent-button" >Сheckout <img className="violent-button__img" src="/img/arrow-right.svg" alt="arrow-right" /> </button>
