@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Shark-Shop/static/css/main.a92083df.css",
-    "main.js": "/Shark-Shop/static/js/main.848632a2.js",
+    "main.js": "/Shark-Shop/static/js/main.2699c590.js",
     "index.html": "/Shark-Shop/index.html",
     "main.a92083df.css.map": "/Shark-Shop/static/css/main.a92083df.css.map",
-    "main.848632a2.js.map": "/Shark-Shop/static/js/main.848632a2.js.map"
+    "main.2699c590.js.map": "/Shark-Shop/static/js/main.2699c590.js.map"
   },
   "entrypoints": [
     "static/css/main.a92083df.css",
-    "static/js/main.848632a2.js"
+    "static/js/main.2699c590.js"
   ]
 }
